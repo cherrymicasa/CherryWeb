@@ -1,0 +1,88 @@
+:root {
+    --grid-unit: 1rem;
+    --border-radius-base: 0.5rem;
+  }
+  
+  [data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-fg: #000000;
+  }
+  
+  [data-theme="dark"] {
+    --color-bg: #252e57;
+    --color-fg: #ffffff;
+  }
+  
+  /* example use of CSS custom properties */
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    
+  }
+
+
+body {
+    cursor: url(assets/cursor.cur), auto;
+    background-image: url(images/shimmerstars.gif);
+}
+
+main {
+  width: fit-content;
+  margin: auto;
+  border: 1px solid white;
+  padding: 0.4em;
+}
+
+.captions {
+    font-style: italic;
+}
+
+.end {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#me {
+    width: 10vw;
+    padding-top: 10px;
+    border: outset white;
+}
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+.aboutMe {
+  margin: 0.5em 0% 0% 0%;
+  padding: 0%;
+}
+.meDesc {
+  text-indent: 80px;
+  margin: 0%;
+}
+
+#fair {
+    width: 20vw;
+    padding-top: 20px;
+}
+
+
+a, a:visited {
+    color: rgb(72, 255, 72);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.container {
+  margin-top:auto;
+  margin-bottom:auto;
+  text-align: left;
+  display: block;
+  background-image: url(images/star.gif);
+  padding-bottom: 20px;
+}
+
