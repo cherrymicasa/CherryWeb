@@ -1,29 +1,9 @@
-:root {
-    --grid-unit: 1rem;
-    --border-radius-base: 0.5rem;
-  }
-  
-  [data-theme="light"] {
-    --color-bg: #ffffff;
-    --color-fg: #000000;
-  }
-  
-  [data-theme="dark"] {
-    --color-bg: #252e57;
-    --color-fg: #ffffff;
-  }
-  
-  /* example use of CSS custom properties */
-  body {
-    background-color: var(--color-bg);
-    color: var(--color-fg);
-    
-  }
 
-
-body {
+/** Everything for the home page **/
+#homeBG {
     cursor: url(assets/cursor.cur), auto;
     background-image: url(images/shimmerstars.gif);
+    color: white;
 }
 
 main {
@@ -40,6 +20,7 @@ main {
 .end {
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(255, 255, 255);
+    
 }
 
 #me {
@@ -61,8 +42,10 @@ main {
   padding: 0%;
 }
 .meDesc {
-  text-indent: 80px;
-  margin: 0%;
+  text-overflow: clip;
+  width: 25vw;
+  
+  margin: auto;
 }
 
 #fair {
@@ -86,3 +69,27 @@ a, a:visited {
   padding-bottom: 20px;
 }
 
+/** Everything for the interests page **/
+#interestsBG {
+  background-image: url(images/animated_background.gif);
+  color: white;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#interests {
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
+  padding-top: 5vh;
+  display: flex;
+  justify-content: space-around;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.home {
+  
+  text-align: center;
+}
