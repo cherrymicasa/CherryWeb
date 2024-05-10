@@ -43,21 +43,42 @@ main {
 }
 .meDesc {
   text-overflow: clip;
-  width: 25vw;
-  
+  width: 40vw; 
   margin: auto;
+  padding-bottom: 20px;
+
 }
 
-#fair {
-    width: 20vw;
-    padding-top: 20px;
+.fair {
+    height: 50vh;
+    text-align: center;
 }
 
+figure {
+  display: inline-block;
+  position: relative;
+}
 
-a, a:visited {
+figcaption {
+  padding: 0.2em;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(72, 255, 72, 0.7);
+  display: none;
+}
+
+figure:hover figcaption {
+  display: flex;
+}
+.homeLinks, .homeLinks:visited {
     color: rgb(72, 255, 72);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
+    
+}
+.dashedLink:hover {
+  font-weight: 900;
+  border: 2px dashed rgb(72, 255, 72);;
 }
 
 .container {
@@ -67,9 +88,70 @@ a, a:visited {
   display: block;
   background-image: url(images/star.gif);
   padding-bottom: 20px;
+
 }
 
 /** Everything for the interests page **/
+
+.blog:hover {
+  color: #ffe600;
+  text-align: center;
+  text-shadow: 0 0 5px #ffae00, 0 0 30px #ffe600;
+}
+.blog {
+  color: #ffe60088;
+}
+.images:hover {
+  color: #5eff00;
+  text-align: center;
+  text-shadow: 0 0 5px #2ab300, 0 0 30px #5eff00;
+}
+.images {
+  color: #5eff0088;
+  position: relative;
+  text-align: center;
+}
+.art:hover {
+  color: #4ac6ff;
+  text-align: center;
+  text-shadow: 0 0 5px #22525a, 0 0 30px #014564;
+}
+.art {
+  color: #4ac6ff88;
+}
+.learning:hover {
+  color: #89ffd2;
+  text-align: center;
+  text-shadow: 0 0 5px #6a4496,0 0 30px #89ffd2;
+}
+.learning {
+  color: #89ffd288;
+}
+.reading:hover {
+  color: #f5abff;
+  text-align: center;
+  text-shadow: 0 0 5px #660055,0 0 30px #f5abff;
+}
+.reading {
+  color: #f5abff88
+}
+.games:hover {
+  color: #ff0000;
+  text-align: center;
+  text-shadow: 0 0 5px #800000,0 0 30px #ff0000;
+}
+.games {
+  color: #db1e1e88
+}
+.music:hover {
+  color: #ff7b00;
+  text-align: center;
+  text-shadow:0 0 5px #774000,0 0 30px #ff7b00;
+}
+.music {
+  color: #ff7b0088
+}
+
 #interestsBG {
   background-image: url(images/animated_background.gif);
   color: white;
@@ -91,5 +173,26 @@ a, a:visited {
 
 .home {
   
+  text-align: center;
+}
+
+.interestLinks {
+  text-decoration: none;
+}
+
+/** Everything for the music page **/
+@font-face {
+  font-family: MusicFont;
+  src: url(assets/ChloesMusic.ttf);
+}
+
+#musicBG {
+  background-image: url(images/wall.gif);
+}
+
+.musicH1 {
+  font-family: MusicFont;
+  color: rgb(255, 252, 49);
+  font-size: 100px;
   text-align: center;
 }
